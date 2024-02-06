@@ -24,3 +24,5 @@ It consist of various CRUD operaions.
 | GET      | /my-task | Get users all tasks         |
 | PUT      | /:taskid | Edit paricular task         |
 | DELETE   | /:taskid | Delete user particular task |
+
+### Deploying it live on [render.com](https://render.com/) 
