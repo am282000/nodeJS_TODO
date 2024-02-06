@@ -25,4 +25,6 @@ It consist of various CRUD operaions.
 | PUT      | /:taskid | Edit paricular task         |
 | DELETE   | /:taskid | Delete user particular task |
 
-### Deploying it live on [render.com](https://render.com/) 
+### Deploying it live on [render.com](https://render.com/)
+
+API is hosted on [link](https://todo-app-rpcb.onrender.com/)
