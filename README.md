@@ -8,13 +8,17 @@ It consist of various CRUD operaions.
 | API TYPE | ENDPOINT  | DESCRIPTION         | PARAMETERS |
 | -------- | --------- | ------------------- | ---------- |
 | GET      | /all      | Retrieve all users  |            |
-| POST     | /register | Register a new user | ```json    |
+| POST     | /register | Register a new user |
 
+```json
 {
-"name": "Ashish",
-"email": "ashish@gmail2.com",
-"password": "Ashish@123"
+  "name": "Ashish",
+  "email": "ashish@gmail2.com",
+  "password": "Ashish@123"
 }
+```
+
+|
 
 ````|
 | POST     | /login    | Login a new user | ```json
