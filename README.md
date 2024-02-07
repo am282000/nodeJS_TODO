@@ -57,12 +57,13 @@ It consist of various CRUD operaions.
       <td>POST</td>
       <td>/new</td>
       <td>Create a new task</td>
-      <td>
-      `{ 
-      title: string,
-      description: string
-     }`
-	</td>
+      <td> ```bash
+```yaml
+{
+   "this-json": "looks awesome...",
+      "this-json": "looks awesome..."
+}
+```</td>
     </tr>
     <tr>
       <td>GET</td>
