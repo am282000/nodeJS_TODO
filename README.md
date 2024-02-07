@@ -58,13 +58,11 @@ It consist of various CRUD operaions.
       <td>/new</td>
       <td>Create a new task</td>
       <td>
-      ```yaml
-        {
-        "this-json": "looks awesome...",
-            "this-json": "looks awesome..."
-        }
-        ```
-</td>
+      `{ 
+      title: string,
+      description: string
+     }`
+	</td>
     </tr>
     <tr>
       <td>GET</td>
