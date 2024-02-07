@@ -48,6 +48,8 @@ It consist of various CRUD operaions.
       <th>API TYPE</th>
       <th>ENDPOINT</th>
       <th>DESCRIPTION</th>
+      <th>Payload/Params</th>
+      <th>Response</th>
     </tr>
   </thead>
   <tbody>
@@ -55,6 +57,12 @@ It consist of various CRUD operaions.
       <td>POST</td>
       <td>/new</td>
       <td>Create a new task</td>
+      <td>
+      `{ 
+      title: string,
+      description: string
+     }`
+	</td>
     </tr>
     <tr>
       <td>GET</td>
@@ -71,6 +79,7 @@ It consist of various CRUD operaions.
       <td>/:taskid</td>
       <td>Delete user particular task</td>
     </tr>
+
   </tbody>
 </table>
 
