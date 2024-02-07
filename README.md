@@ -6,24 +6,73 @@ It consist of various CRUD operaions.
 
 - Access all the usr API by prefixing this **/api/v1/users**
 
-| API TYPE | ENDPOINT  | DESCRIPTION                        |
-| -------- | --------- | ---------------------------------- |
-| GET      | /all      | Retrieve all users                 |
-| POST     | /register | Create a new user and setCookies   |
-| POST     | /login    | Login specific user and setCookies |
-| GET      | /me       | Get user profile details           |
-| GET      | /logout   | Logout user and delete cookie      |
+<table>
+  <thead>
+    <tr>
+      <th>API TYPE</th>
+      <th>ENDPOINT</th>
+      <th>DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/new</td>
+      <td>Create a new task</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/my-task</td>
+      <td>Get users all tasks</td>
+    </tr>
+    <tr>
+      <td>PUT</td>
+      <td>/:taskid</td>
+      <td>Edit particular task</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>/:taskid</td>
+      <td>Delete user particular task</td>
+    </tr>
+  </tbody>
+</table>
 
 2. Tasks
 
 - Access all the usr API by prefixing this **/api/v1/task**
 
-| API TYPE | ENDPOINT | DESCRIPTION                 |
-| -------- | -------- | --------------------------- |
-| POST     | /new     | Create a new task           |
-| GET      | /my-task | Get users all tasks         |
-| PUT      | /:taskid | Edit paricular task         |
-| DELETE   | /:taskid | Delete user particular task |
+<table>
+  <thead>
+    <tr>
+      <th>API TYPE</th>
+      <th>ENDPOINT</th>
+      <th>DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/new</td>
+      <td>Create a new task</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/my-task</td>
+      <td>Get users all tasks</td>
+    </tr>
+    <tr>
+      <td>PUT</td>
+      <td>/:taskid</td>
+      <td>Edit particular task</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>/:taskid</td>
+      <td>Delete user particular task</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Deploying it live on [render.com](https://render.com/)
 
