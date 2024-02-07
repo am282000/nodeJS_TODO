@@ -14,14 +14,6 @@ It consist of various CRUD operaions.
 | GET      | /me       | Get user profile details           |
 | GET      | /logout   | Logout user and delete cookie      |
 
-API TYPE	ENDPOINT	DESCRIPTION	PAYLOAD/PARAMS	RESPONSE
-GET	/all	Retrieve all users	{	{
-			    "title": "string",	    "success": "Boolean",
-			    "description": "string"	    "msg": "string"
-			}	}
-				
-
-
 2. Tasks
 
 - Access all the usr API by prefixing this **/api/v1/task**
