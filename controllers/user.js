@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import { sendCookie } from "../utils/features.js";
 import ErrorHandler from "../middlewares/error.js";
 
-export const getAllUsers = async (req, res) => {
+export const getAllUsers = async (req, res, next) => {
   try {
     const users = await User.find({});
     res.json({ success: true, users });
@@ -11,7 +11,7 @@ export const getAllUsers = async (req, res) => {
     next(error);
   }
 };
-export const registerUser = async (req, res) => {
+export const registerUser = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
     const existingUser = await User.findOne({ email });
@@ -25,7 +25,7 @@ export const registerUser = async (req, res) => {
     next(error);
   }
 };
-export const loginUser = async (req, res) => {
+export const loginUser = async (req, res, next) => {
   try {
     const { email, password } = req.body;
     const existingUser = await User.findOne({ email }).select("+password");
@@ -47,7 +47,7 @@ export const loginUser = async (req, res) => {
   }
 };
 
-export const logoutUser = (req, res) => {
+export const logoutUser = (req, res, next) => {
   try {
     res
       .status(200)
