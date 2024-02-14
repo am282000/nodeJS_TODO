@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser()); //use cookie parser before using userRoutes
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL], // Allowed origin can only access API urls to fetch data
+    // origin: [process.env.FRONTEND_URL], // Allowed origin can only access API urls to fetch data
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // Basically if send cookie can be accesable on Front end
   })
