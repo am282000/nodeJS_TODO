@@ -1,7 +1,7 @@
 import ErrorHandler from "../middlewares/error.js";
 import { Task } from "../models/task.js";
 
-export const createNewTask = async (req, res) => {
+export const createNewTask = async (req, res, next) => {
   try {
     const { title, description } = req.body;
 
@@ -29,7 +29,7 @@ export const createNewTask = async (req, res) => {
   }
 };
 
-export const getMyTask = async (req, res) => {
+export const getMyTask = async (req, res, next) => {
   try {
     const userID = req.user._id;
     console.log(userID);
@@ -45,7 +45,7 @@ export const getMyTask = async (req, res) => {
   }
 };
 
-export const updateTask = async (req, res) => {
+export const updateTask = async (req, res, next) => {
   try {
     const { id } = req.params;
 
